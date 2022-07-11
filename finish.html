@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="levelhome.css">
+    <link rel="stylesheet" href="finish.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="end">
+        <h1 class="title">Score:</h1>
+        <h1 id="finalScore">0</h1>
+        <form class="end_container">
+            <h2 id="end-text" class="typewriter"> Save your score!</h2>
+            <input type="text" name="name" id="username" maxlength="10" placeholder="Enter your name" >
+            <button id="saveScore" type="submit" onclick="saveHighscore(event)" disabled>Save</button>
+        </form>
+        <a href="index.html">
+            <button>Return Home</button>
+        </a>
+    </div>
+
+
+    <script src="finish.js"></script>
+</body>
+</html>

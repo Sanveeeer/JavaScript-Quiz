@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #edede9;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 100px;
+}
+
+h2 {
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.easyButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+button {
+    margin: 15px;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+button:hover:after {
+    transform: translate(0, 0);
+}
+
+button:active {
+    background-color: white;
+    outline: 0;
+}
+
+button:hover {
+    outline: 0;
+}
+
+.play {
+    background-color: lawngreen;
+
+}
+
+.highscore {
+    background-color: orange;
+}
+
+.night {
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+
+.nightToggle {
+    background-color: white;
+    color: #111;
+    width: 5px;
+}
+
+.dark-mode {
+    background-color: #2b2d42;
+    color: white;
+  }
+
+.back {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.backbutton {
+    background-color: white;
+    color: #111;
+    width: 5px;
+}
+
+.bxs-left-arrow-alt {
+    font-size: 35px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+     visibility: visible;
+}

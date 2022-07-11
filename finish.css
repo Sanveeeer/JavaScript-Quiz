@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.title {
+  padding-top: 10rem;
+  font-size: 40px;
+  text-align: center;
+}
+
+.end_container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5rem;
+}
+
+#username {
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: cyan;
+  margin: auto;
+}
+
+.typewriter {
+  width: 17ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid cyan;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
