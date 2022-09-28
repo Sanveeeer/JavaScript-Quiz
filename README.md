@@ -1,4 +1,4 @@
-# Mid-Course-Project
+# Javascript Quiz
 
 - Created a multiple choice quiz using HTML, CSS and JavaScript
 
